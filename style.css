@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+	--black: #000000;
+	--dark-gray: #2d2827;
+	--white: #ffffff;
+	--light-gray: #f7f7f7;
+	--brownish: #7a5a45;
+	--rusty-orange: #b96f3a;
+	--amber: #e58411;
+	--midnight-blue: #0d1b39;
+	--steel-blue: #678ebd;
+}
+/* Meyer Reset with Box Sizing */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	width: 100vw;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Additional Reset for Margins and Paddings */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset Margins and Paddings for Most Elements */
+body,
+button,
+input,
+select,
+textarea {
+	margin: 0;
+	padding: 0;
+}
+
+/* Responsive Images */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Set Base Font Size */
+html {
+	font-size: 16px;
+}
+.poppins-thin {
+	font-family: "Poppins", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.poppins-thin-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.poppins-extralight {
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+.poppins-extralight-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: italic;
+}
+
+.poppins-light {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.poppins-light-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.poppins-regular {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.poppins-regular-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.poppins-medium {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.poppins-medium-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.poppins-semibold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.poppins-semibold-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.poppins-bold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.poppins-bold-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.poppins-extrabold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+.poppins-extrabold-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	font-style: italic;
+}
+
+.poppins-black {
+	font-family: "Poppins", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.poppins-black-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+}
+
+.Main {
+	background-image: url("./Assets/living-room-scandinavian-interior-design.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	padding: 5px 40px;
+	width: 100%;
+}
+.navbar-toggler {
+	display: none;
+}
+nav.navbar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+.navbar-brand img {
+	width: 120px;
+}
+ul {
+	text-decoration: none;
+	border: 0px;
+}
+.mainnav-items {
+	display: flex;
+	gap: 10%;
+	width: 50%;
+	justify-content: space-between;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+ul.mainnav-items a.nav-link {
+	color: #000000;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 18px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+ul.mainnav-items > li:hover a.nav-link {
+	color: rgba(0, 0, 0, 0.6);
+}
+ul.mainnav-items li {
+	display: flex;
+	align-items: center;
+}
+.dropdown-toggle ul.dropdown-menu {
+	display: flex;
+	top: 50px;
+	background-color: var(--rusty-orange);
+	padding: 8px;
+	font-size: 0.9em;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+	gap: 5px;
+	position: absolute;
+	top: 30px;
+}
+.dropdown-toggle.active ul.dropdown-menu {
+	opacity: 1;
+	top: 40px;
+}
+ul.dropdown-menu a {
+	color: white;
+}
+li.dropdown-toggle {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	position: relative;
+}
+
+li.dropdown-toggle span {
+	margin-top: 5px;
+	transition: all 0.3s ease-in-out;
+}
+li.dropdown-toggle:hover span {
+	color: var(--rusty-orange);
+	/* transform: rotate(0.5turn); */
+}
+li.dropdown-toggle.active span {
+	transform: rotate(0.5turn);
+}
+ul.icon-nav {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+li.icon {
+	color: white !important;
+	background-color: var(--dark-gray);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	vertical-align: middle;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+}
+li.icon:hover {
+	color: var(--amber) !important;
+}
+div.circle {
+	color: white;
+	width: 17px;
+	height: 17px;
+	background-color: var(--amber);
+	border-radius: 50%;
+	font-size: 0.8vw;
+	text-align: center;
+	line-height: 17px;
+	vertical-align: middle;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.main-text {
+	width: 60%;
+	text-align: center;
+	font-size: 4vw;
+	margin: auto;
+	margin-top: 15vh;
+}
+.bottom-main {
+	background-color: var(--rusty-orange);
+	padding: 30px;
+	border-radius: 15px;
+	color: white;
+	width: 100%;
+	box-sizing: border-box;
+} /*
+.bottom-main h3 {
+	font-size: 40px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.bottom-main p {
+	font-size: 15px;
+	text-align: center;
+}
+.vertical-Line {
+	background-color: white;
+	width: 1px;
+	border-radius: 10px;
+	height: 70%;
+} */
