@@ -10,3 +10,10 @@ $("li.dropdown-toggle").on("click", function (e) {
         jThis.toggleClass('active')
     }
 });
+
+$("ul.filter").children().on("click", function (e) {
+    if (!$(e.target).hasClass("active")) {
+        $(this).siblings().removeClass('active')
+        $(this).toggleClass('active')
+    }
+});
